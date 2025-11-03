@@ -1,9 +1,9 @@
-import Text from "./components/Text";
+import LandingPage from "./pages/LandingPage";
 
 export default function App() {
   return (
     <>
-      <Text as="h1" >Lato</Text>
+      <LandingPage />
     </>
 
   )
