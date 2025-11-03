@@ -1,6 +1,5 @@
 import { cva } from "class-variance-authority";
 
-
 export const textVariants = cva("text-gray-100 ", {
     variants: {
         variant: {
