@@ -1,12 +1,25 @@
+import Input from "@/components/Input"
 import Text from "@/components/Text"
 
 export default function LoginPage() {
+    const placeholder = ['Email', 'Password']
+
     return (
         <div
-            className="min-h-screen flex"
+            className="min-h-screen flex lg:justify-start"
         >
-            <div className="mx-40 my-64  w-full">
-                <Text variant={"dm-text-lg"} className="text-start">Welcome Back!</Text>
+            <div className="w-full flex flex-col gap-10 justify-center mx-10 sm:mx-30 lg:mx-40">
+                <Text variant={"dm-text-lg"}>Welcome Back!</Text>
+
+                <div>
+                    {placeholder.map((item, index) => (
+                        <div className="mb-5">
+                            <Text key={index} variant={"l-text-md"} className="ml-4">{item}</Text>
+                            <Input />
+                        </div>
+                    ))}
+                </div>
+
             </div>
         </div>
     )
