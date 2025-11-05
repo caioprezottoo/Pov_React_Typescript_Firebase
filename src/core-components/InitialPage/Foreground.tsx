@@ -6,6 +6,7 @@ import Container from '@/components/Container'
 import BlurText from "@/components/BlurText";
 import AnimatedContent from '@/components/AnimatedContent'
 import { HoverButton } from "@/components/HoverButton"
+import { NavLink } from 'react-router'
 
 export default function Foreground() {
 
@@ -41,8 +42,12 @@ export default function Foreground() {
             </div>
 
             <div className='flex flex-col gap-5 mt-12'>
-                <Button variant={"primary"} className="">Get Started</Button>
-                <HoverButton>Sign in</HoverButton>
+                <NavLink to="/signup">
+                    <Button variant={"primary"} className="">Get Started</Button>
+                </NavLink>
+                <NavLink to='/login'>
+                    <HoverButton>Log in</HoverButton>
+                </NavLink>
             </div>
         </Container>
     )
