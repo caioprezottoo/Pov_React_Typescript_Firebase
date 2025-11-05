@@ -1,10 +1,9 @@
-import LandingPage from "./pages/LandingPage";
+import InitialPage from "@/pages/InitialPage.tsx"
 
 export default function App() {
   return (
     <>
-      <LandingPage />
+      <InitialPage />
     </>
-
   )
 }
