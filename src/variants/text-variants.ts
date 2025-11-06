@@ -11,7 +11,7 @@ export const textVariants = cva("text-gray-100 ", {
             "l-text-md": "font-lato text-[15px]",
             "l-text-lg": "font-lato opacity-78 text-[17px] sm:text-[19px] lg:text-[20px]",
             "dm-text-xs": "font-dmsans font-bold text-xs",
-            "dm-text-sm": "font-dmsans font-medium text-[15px]",
+            "dm-text-sm": "font-dmsans font-medium text-[12px] sm:text-[14px] lg:text-[15px]",
             "dm-text-md": "font-dmsans font-bold text-[28px]",
             "dm-text-lg": "font-dmsans font-bold text-[25px] sm:text-[35px] lg:text-[45px]",
         }

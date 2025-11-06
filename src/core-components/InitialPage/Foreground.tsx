@@ -33,7 +33,7 @@ export default function Foreground() {
                     <Text variant={"m-text-xl"} className="text-center">Point of view!</Text>
                 </AnimatedContent>
                 <BlurText
-                    text='Get ready to jump into nostalgia and exploring. Show your "pov", review and create a list of your favorite movies of all time'
+                    text='Get ready to jump into nostalgia and exploring. Show your "pov", review and create a list of your favorite movies of all time.'
                     delay={50}
                     animateBy="words"
                     direction="top"

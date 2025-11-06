@@ -15,7 +15,6 @@ export default function AuthLayout() {
         backgroundImage = SignupBg
     } else if (currentPath.includes('/login')) {
         backgroundImage = LoginBg
-
     }
 
     const bgStyle = {
@@ -32,7 +31,6 @@ export default function AuthLayout() {
             </NavLink>
 
             <Outlet />
-
         </div>
     )
 }

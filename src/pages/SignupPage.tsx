@@ -3,6 +3,7 @@ import Input from "@/components/Input"
 import Text from "@/components/Text"
 import Arrow from "@/assets/svg/arrowblack.svg?react"
 import { useState } from "react"
+import { NavLink } from "react-router"
 
 export default function SignupPage() {
     const placeholder = ['Name', 'Email', 'Password']
@@ -26,8 +27,11 @@ export default function SignupPage() {
                         </div>
                     ))}
                 </div>
-                {isClear ? "" : <Button variant={"secondary"} icon={Arrow}></Button>}
-
+                {isClear ? "" :
+                    <NavLink to='/explore'>
+                        <Button variant={"secondary"} icon={Arrow}></Button>
+                    </NavLink>
+                }
             </div>
         </div>
     )
