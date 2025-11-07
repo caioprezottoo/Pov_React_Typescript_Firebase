@@ -20,7 +20,7 @@ export default function LoginPage() {
                     {placeholder.map((item, index) => (
                         <div className="mb-5">
                             <Text key={index} variant={"l-text-md"} className="ml-4">{item}</Text>
-                            <Input onChange={(e) => {
+                            <Input variant={"primary"} onChange={(e) => {
                                 setText(e.target.value)
                             }} />
                         </div>

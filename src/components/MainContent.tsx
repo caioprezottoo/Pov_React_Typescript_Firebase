@@ -1,5 +1,8 @@
 import { Outlet, useLocation } from 'react-router'
 import Text from "@/components/Text";
+import AnimatedContent from './AnimatedContent';
+import BlurText from './BlurText';
+import { textVariants } from '@/variants/text-variants';
 
 export default function MainContent() {
     const location = useLocation()
@@ -22,11 +25,34 @@ export default function MainContent() {
         subText = "Here's what you can do..."
     }
 
+    const handleAnimationComplete = () => {
+        console.log('Animation completed!');
+    };
+
     return (
         <section className="flex-1 flex flex-col">
             <div className="flex flex-col items-center gap-1 m-12">
-                <Text variant="dm-text-lg">{titleText}</Text>
-                <Text variant="l-text-md">{subText}</Text>
+                <AnimatedContent
+                    distance={50}
+                    direction="vertical"
+                    reverse={true}
+                    duration={1.2}
+                    initialOpacity={0.1}
+                    animateOpacity
+                    scale={1.2}
+                    threshold={0.2}
+                    delay={0.1}
+                >
+                    <Text variant="dm-text-lg">{titleText}</Text>
+                </AnimatedContent>
+                <BlurText
+                    text={subText}
+                    delay={50}
+                    animateBy="words"
+                    direction="top"
+                    onAnimationComplete={handleAnimationComplete}
+                    className={`flex justify-center ${textVariants({ variant: "l-text-md" })}`}
+                />
             </div>
 
             <div className={`
