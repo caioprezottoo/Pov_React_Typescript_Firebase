@@ -15,7 +15,7 @@ export default function Input({ className, variant, icon: IconSvg, ...props }: I
                 <Icon
                     svg={IconSvg}
                     className={`absolute left-3 top-1/2 -translate-y-1/2 
-                        w-5 h-5 pointer-events-none`}
+                        w-3 h-3 pointer-events-none`}
                 />
             )}
             <input
