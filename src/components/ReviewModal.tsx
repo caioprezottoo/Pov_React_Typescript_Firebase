@@ -38,8 +38,8 @@ export default function ReviewModal({
             alert("Please select a rating");
             return;
         }
-        if (review.trim().length < 10) {
-            alert("Please write a review with at least 10 characters");
+        if (review.trim().length < 3) {
+            alert("Please write a review with at least 3 characters");
             return;
         }
         onSubmit(rating, review);
@@ -110,13 +110,6 @@ export default function ReviewModal({
                 </div>
 
                 <div className="flex gap-3 justify-end">
-                    <Button
-                        variant="secondary"
-                        onClick={onClose}
-                        className="w-24! text-gray-400"
-                    >
-                        Cancel
-                    </Button>
                     <Button
                         variant="secondary"
                         onClick={handleSubmit}

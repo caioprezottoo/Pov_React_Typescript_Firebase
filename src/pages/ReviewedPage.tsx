@@ -29,12 +29,9 @@ export default function ReviewedPage() {
     }, [user]);
 
     const handleDelete = async (reviewId: string) => {
-        if (!window.confirm("Are you sure you want to delete this review?")) return;
-
         try {
             await deleteReview(reviewId);
             setReviews(reviews.filter(r => r.id !== reviewId));
-            alert("Review deleted successfully!");
         } catch (error) {
             console.error("Failed to delete review:", error);
             alert("Failed to delete review");
@@ -97,7 +94,7 @@ export default function ReviewedPage() {
                             }}
                             className="self-end mt-2 text-red hover:scale-110 transition-transform"
                         >
-                            <Trash size={20} color="#A20A0A" />
+                            <Trash size={20} color="white" className="cursor-pointer"/>
                         </button>
                     </div>
                 ))}
