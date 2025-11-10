@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useParams, useNavigate } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { getMovieById, type Movie } from "@/services/omdbApi";
 import { addReview, getMovieReview, updateReview } from "@/services/reviewService";
 import { addToWatchlist, removeFromWatchlist, getWatchlist } from "@/services/watchlistService";
