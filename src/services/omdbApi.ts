@@ -7,7 +7,9 @@ export interface Movie {
     Year: string;       // Release year
     imdbID: string;     // Unique ID
     Poster: string;     // Image URL
-    Plot?: string;      // Movie description (optional)
+    Plot?: string;      // Movie description
+    imdbRating?: number;
+    Actors?: string;
 }
 
 export const getMovieById = async (movieId: string): Promise<Movie> => {

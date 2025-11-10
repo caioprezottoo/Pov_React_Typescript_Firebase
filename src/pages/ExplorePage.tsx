@@ -1,5 +1,6 @@
 import { getMovieById, searchMovies, type Movie } from "@/services/omdbApi";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 
 import Input from "@/components/Input";
 import Text from "@/components/Text";
@@ -15,6 +16,8 @@ export default function ExplorePage() {
     const [loading, setLoading] = useState(false);
     const [recommended, setRecommended] = useState(true)
     const [error, setError] = useState("")
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const loadMovies = async () => {
@@ -86,13 +89,15 @@ export default function ExplorePage() {
 
             {loading ?
                 <div className="flex max-w-5xl w-full h-full">
-                    <div className="w-full h-90 rounded-lg animate-pulse bg-gray-300 opacity-40" />
+                    <div className="w-full h-90 rounded-lg animate-pulse bg-gray-300 opacity-40 border" />
                 </div>
                 :
                 <div className="grid grid-cols-8 gap-4 w-full max-w-5xl">
                     {movies.map((movie) => (
-                        <div key={movie.imdbID}
+                        <div
+                            key={movie.imdbID}
                             className="flex flex-col gap-2 cursor-pointer"
+                            onClick={() => navigate(`/movie/${movie.imdbID}`)}
                         >
                             <img
                                 src={movie.Poster}

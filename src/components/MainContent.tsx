@@ -3,16 +3,18 @@ import Text from "@/components/Text";
 import AnimatedContent from './AnimatedContent';
 import BlurText from './BlurText';
 import { textVariants } from '@/variants/text-variants';
+import { useAuth } from "@/context/AuthContext";
 
 export default function MainContent() {
     const location = useLocation()
     const currentPath = location.pathname
+    const { user } = useAuth();
 
     let titleText = ''
     let subText = ''
 
     if (currentPath.includes('/explore')) {
-        titleText = 'Welcome Back!'
+        titleText = `Welcome, ${user?.name}!`
         subText = "Here's what we've been watching…"
     } else if (currentPath.includes('/reviewed')) {
         titleText = 'Such a good taste!'
@@ -23,11 +25,10 @@ export default function MainContent() {
     } else if (currentPath.includes('/profile')) {
         titleText = 'This is your profile'
         subText = "Here's what you can do..."
+    } else if (currentPath.includes('/movie')) {
+        titleText = 'About the movie'
+        subText = "Here's what you need to know..."
     }
-
-    const handleAnimationComplete = () => {
-        console.log('Animation completed!');
-    };
 
     return (
         <section className="flex-1 flex flex-col">
@@ -50,7 +51,6 @@ export default function MainContent() {
                     delay={50}
                     animateBy="words"
                     direction="top"
-                    onAnimationComplete={handleAnimationComplete}
                     className={`flex justify-center ${textVariants({ variant: "l-text-md" })}`}
                 />
             </div>
