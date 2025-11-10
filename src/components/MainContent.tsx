@@ -32,7 +32,7 @@ export default function MainContent() {
 
     return (
         <section className="flex-1 flex flex-col">
-            <div className="flex flex-col items-center gap-1 m-12">
+            <div className="flex flex-col items-center gap-1 m-12 text-center">
                 <AnimatedContent
                     distance={50}
                     direction="vertical"

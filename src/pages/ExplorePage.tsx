@@ -92,7 +92,7 @@ export default function ExplorePage() {
                     <div className="w-full h-90 rounded-lg animate-pulse bg-gray-300 opacity-40 border" />
                 </div>
                 :
-                <div className="grid grid-cols-8 gap-4 w-full max-w-5xl">
+                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 w-full max-w-5xl">
                     {movies.map((movie) => (
                         <div
                             key={movie.imdbID}
