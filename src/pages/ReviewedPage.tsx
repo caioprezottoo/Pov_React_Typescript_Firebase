@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { getUserReviews, deleteReview, type Review } from "@/services/reviewService";
 import { useAuth } from "@/context/AuthContext";
-import Text from "@/components/Text";
+import Text from "@/components/shared/Text";
 import { Star, Trash } from "@phosphor-icons/react";
 
 export default function ReviewedPage() {

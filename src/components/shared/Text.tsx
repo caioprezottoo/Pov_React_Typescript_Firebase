@@ -1,6 +1,6 @@
 import type { VariantProps } from 'class-variance-authority'
 import React from 'react'
-import { textVariants } from '../variants/text-variants'
+import { textVariants } from '../../variants/text-variants'
 
 interface TextProps extends VariantProps<typeof textVariants> {
     as?: keyof React.JSX.IntrinsicElements

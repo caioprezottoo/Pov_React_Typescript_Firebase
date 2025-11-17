@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
 import Input from "@/components/Input";
-import Text from "@/components/Text";
+import Text from "@/components/shared/Text";
 import Button from "@/components/Button";
 
 import Search from "@/assets/svg/search.svg?react";

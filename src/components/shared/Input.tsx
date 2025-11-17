@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './Icon'
+import Icon from './shared/Icon'
 import type { VariantProps } from 'class-variance-authority'
 import { inputVariants } from '@/variants/input-variants'
 

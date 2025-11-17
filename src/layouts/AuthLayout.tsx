@@ -2,7 +2,7 @@ import { NavLink, Outlet, useLocation } from "react-router";
 
 import SignupBg from '@/assets/svg/signupbg.svg'
 import LoginBg from '@/assets/svg/loginbg.svg'
-import Icon from "@/components/Icon";
+import Icon from "@/components/shared/Icon";
 import Arrow from "@/assets/svg/arrow.svg?react"
 
 export default function AuthLayout() {

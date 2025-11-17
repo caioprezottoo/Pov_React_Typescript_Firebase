@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { getWatchlist, type WatchlistItem } from "@/services/watchlistService";
-import Text from "@/components/Text";
+import Text from "@/components/shared/Text";
 import { useNavigate } from "react-router";
 
 export default function WatchListPage() {

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
 
 import InitialPage from "@/pages/InitialPage.tsx"
-import AuthLayout from './core-components/AuthLayout'
-import AppLayout from './core-components/AppLayout'
+import AuthLayout from './layouts/AuthLayout'
+import AppLayout from './layouts/AppLayout'
 import SignupPage from './pages/SignupPage'
 import LoginPage from './pages/LoginPage'
 import ExplorePage from './pages/ExplorePage'

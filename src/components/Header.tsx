@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router'
 
-import Icon from './Icon'
+import Icon from './shared/Icon'
 import Logo from '@/assets/svg/logo.svg?react'
 import Container from './Container'
-import Text from './Text'
+import Text from './shared/Text'
 
 export default function Header() {
     const pages = ['Explore', 'Reviewed', 'Watch-List', 'Profile']

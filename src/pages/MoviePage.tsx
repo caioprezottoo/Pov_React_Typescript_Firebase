@@ -4,10 +4,10 @@ import { getMovieById, type Movie } from "@/services/omdbApi";
 import { addReview, getMovieReview, updateReview } from "@/services/reviewService";
 import { addToWatchlist, removeFromWatchlist, getWatchlist } from "@/services/watchlistService";
 import { useAuth } from "@/context/AuthContext";
-import Text from "@/components/Text";
+import Text from "@/components/shared/Text";
 import { Star, BookmarkSimple } from "@phosphor-icons/react";
 import ReviewModal from "@/components/ReviewModal";
-import Icon from "@/components/Icon";
+import Icon from "@/components/shared/Icon";
 import Arrow from "@/assets/svg/arrow.svg?react";
 
 export default function MoviePage() {

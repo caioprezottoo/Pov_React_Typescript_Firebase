@@ -1,8 +1,8 @@
 import Button from "@/components/Button";
-import { auth, db } from "@/components/Firebase";
+import { auth, db } from "@/config/Firebase";
 import { deleteUser } from "firebase/auth";
 import { doc, deleteDoc } from "firebase/firestore";
-import Text from "@/components/Text";
+import Text from "@/components/shared/Text";
 import { useAuth } from "@/context/AuthContext";
 import { useNavigate } from "react-router";
 import { FirebaseError } from "firebase/app";

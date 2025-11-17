@@ -1,11 +1,11 @@
-import Icon from '@/components/Icon'
+import Icon from '@/components/shared/Icon'
 import Logo from '@/assets/svg/logo.svg?react'
-import Text from '@/components/Text'
-import Button from '@/components/Button'
-import Container from '@/components/Container'
-import BlurText from "@/components/BlurText";
-import AnimatedContent from '@/components/AnimatedContent'
-import { HoverButton } from "@/components/HoverButton"
+import Text from '@/components/shared/Text'
+import Button from '@/components/shared/Button'
+import Container from '@/components/shared/Container'
+import BlurText from "@/components/bits/BlurText";
+import AnimatedContent from '@/components/bits/AnimatedContent'
+import { HoverButton } from "@/components/bits/HoverButton"
 import { NavLink } from 'react-router'
 import { textVariants } from '@/variants/text-variants'
 

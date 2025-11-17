@@ -1,4 +1,4 @@
-import Background from '@/core-components/InitialPage/Background'
+import Background from '@/layouts/InitialPage/Background'
 
 export default function InitialPage() {
     return (

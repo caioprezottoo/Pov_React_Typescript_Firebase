@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router'
-import Text from "@/components/Text";
-import AnimatedContent from './AnimatedContent';
-import BlurText from './BlurText';
+import Text from "@/components/shared/Text";
+import AnimatedContent from './bits/AnimatedContent';
+import BlurText from './bits/BlurText';
 import { textVariants } from '@/variants/text-variants';
 import { useAuth } from "@/context/AuthContext";
 

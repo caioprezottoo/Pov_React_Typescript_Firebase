@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth, db } from "@/components/Firebase";
+import { auth, db } from "@/config/Firebase";
 import { doc, getDoc } from "firebase/firestore";
 
 type UserData = {

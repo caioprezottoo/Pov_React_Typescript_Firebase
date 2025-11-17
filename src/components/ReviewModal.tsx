@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, Star } from "@phosphor-icons/react";
-import Text from "./Text";
-import Button from "./Button";
+import Text from "./shared/Text";
+import Button from "././shared/Button";
 
 interface ReviewModalProps {
     isOpen: boolean;

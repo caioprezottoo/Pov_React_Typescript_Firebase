@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, db } from "@/components/Firebase";
+import { auth, db } from "@/config/Firebase";
 import { setDoc, doc } from "firebase/firestore";
 
 import Button from "@/components/Button";
 import Input from "@/components/Input";
-import Text from "@/components/Text";
+import Text from "@/components/shared/Text";
 
 import Arrow from "@/assets/svg/arrowblack.svg?react";
 
